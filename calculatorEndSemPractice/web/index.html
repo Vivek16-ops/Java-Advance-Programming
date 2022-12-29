@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculator Practice for End Sem</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <form action="process" method="post">
+            <table align="center">
+                <tr align="center">
+                    <td colspan="2"><h2>Calculator</h2></td>
+                </tr>
+                <tr>
+                    <td>First Number:</td> <td><input type="number" name="first"></td>
+                </tr>
+                <tr>
+                    <td>Second Number:</td> <td><input type="number" name="second"></td>
+                </tr>
+                 <tr align="center">
+                     <td colspan="2">
+                         <select name="op">
+                             <option value="add">Add</option>
+                             <option value="subs">Subtract</option>
+                             <option value="mul">Multiply</option>
+                             <option value="div">Division</option>
+                         </select>
+                     </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2"><input type="submit" value="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

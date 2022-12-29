@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Inter&display=swap');
+
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .container {
+                display: flex;
+            }
+
+            /* Sidebar Section */
+            .sidebar {
+                background-color: #0fe3c6;
+                width: 434px;
+                font-family: 'Hind Siliguri', sans-serif;
+                height: 100vh;
+            }
+
+            #nav {
+                padding: 25px;
+                list-style: none;
+                font-size: 23px;
+            }
+
+            .items {
+                padding: 27px 0px;
+                font-weight: bold;
+            }
+
+            .items a {
+                text-decoration: none;
+                font-family: 'Hind Siliguri', sans-serif;
+                color: black;
+            }
+
+            .items a:hover {
+                color: white;
+                font-size: 25px;
+            }
+
+            /* Main section  */
+            .main {
+                background-color: yellow;
+                width: 90vw;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 29px 0px;
+                margin-bottom: 12px;
+            }
+
+            .info p {
+                font-size: 21px;
+                padding: 5px 0px;
+                font-family: 'Hind Siliguri', sans-serif;
+            }
+
+            #Name {
+                font-size: 27px;
+                font-weight: bold;
+            }
+
+            .infocontainer {
+                background-color: deeppink;
+                width: 84vw;
+                height: 58vh;
+                margin: auto;
+                margin-top: 31px;
+                display: flex;
+            }
+
+            .devinfo {
+                padding: 19px 21px;
+                width: 1033px;
+                font-family: 'Inter', sans-serif;
+                margin: 12px;
+                font-size: 25px;
+                display: flex;
+                color: white;
+                font-weight: 600;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .para {
+                padding: 20px 2px;
+                margin: 10px 0px;
+            }
+
+            .buttons {
+                margin: 10px;
+            }
+
+            .buttons button {
+                border: 2px solid black;
+                padding: 3px 12px;
+                font-weight: bold;
+                border-radius: 19px;
+                font-family: 'Hind Siliguri', sans-serif;
+                cursor: pointer;
+            }
+
+            .buttons button:hover {
+                background-color: aqua;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .devpic {
+                margin-left: 37px;
+            }
+
+            .devpic img {
+                height: 486px;
+            }
+            .contactform {
+                font-family: 'Hind Siliguri', sans-serif;
+                width: 100vw;
+            }
+
+            .contactform h1 {
+                text-align: center;
+                background: aqua;
+                margin: 17px 5px;
+            }
+
+            .cont {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #e2e2e2;
+            }
+
+            .form {
+                margin: 4px 132px;
+                font-size: 26px;
+            }
+            .mb-3{
+                margin: 26px 0px;
+                display: flex;
+                flex-direction: column;
+            }
+            .mb-3 input{
+                border: 2px solid black;
+                border-radius: 7px;
+                padding: 3px 6px;
+                width: 47vh;
+            }
+            .formbutton{
+                border: 2px solid black;
+                padding: 3px 38px;
+                font-weight: bold;
+                border-radius: 19px;
+                font-family: 'Hind Siliguri', sans-serif;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            .formbutton:hover{
+                background-color: aqua;
+                font-weight: bold;
+                font-style: italic;
+            }
+            .devpic1 img{
+                height: 434px;
+            }
+            #footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 29px;
+                background: black;
+                color: white;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <ul id="nav">
+                    <li class="items"><a href="/">Home</a></li>
+                    <li class="items"><a href="/intro.html">My Intro</a></li>
+                    <li class="items"><a href="/services.html">Services</a></li>
+                    <li class="items"><a href="/blog.html">Blog</a></li>
+                    <li class="items"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contactform">
+                <h1>Contact me for work/General enquiries</h1>
+                <div class="cont">
+                    <div class="form">
+                        <form name="NewServlet" method="post" action="web1">
+                            <div class="mb-3">
+                                Name: <input type="name" name="name" class="form-check-input" id="clientname">
+                            </div>
+                            <div class="mb-3">
+                                Your email: <input type="email"  name="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email and phone with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                Phone: <input type="phone"  name="phone" class="form-control" id="clientphone">
+                            </div>
+                            <button type="submit" name="submit" class="formbutton">Submit</button>
+                        </form>
+                    </div>
+                    <div class="devpic1">
+                        <img src="/devpic.png" alt="image not fount">
+                    </div>
+                </div>
+                <footer id="footer">
+                    <div>Copyright © Vivek</div>
+                    <div>All right reserved</div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
